@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+    <id>me.brucezz.ideaplugin.jcolor</id>
+    <name>JColor</name>
+    <version>0.0.1</version>
+    <vendor email="im.brucezz@gmail.com"
+        url="https://github.com/brucezz/JColor">JColor
+    </vendor>
+
+    <description><![CDATA[
+      Quick preview Color in Java code.<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Alpha version.
+      <br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0" />
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <codeInsight.lineMarkerProvider language="JAVA"
+            implementationClass="me.brucezz.ideaplugin.jcolor.JColorLineMarkerProvider" />
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
